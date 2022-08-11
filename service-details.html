@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="theme-color" content="rgb(79, 70, 229)">
+	<title>Learn, Implementation, Production - Codebumble Inc.</title>
+	<link rel="shortcut icon" href="" type="image/x-icon" id="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="./dist/css/libs/fontawesome.css" rel="stylesheet">
+	<!-- tailwind -->
+	<link rel="stylesheet" href="./dist/css/tailwind.css">
+	<!-- style -->
+	<link rel="stylesheet" href="./dist/css/service-details.css">
+
+	<!-- Video Js -->
+	<link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet"/>
+</head>
+
+<body class="overflow-x-hidden">
+
+	<header class="my-4 lg:dark:text-white absolute w-full z-10">
+		<div class="container">
+			<div class="block lg:flex items-center justify-between max-h-12">
+				<div class="brand-wrap">
+					<a href="./index.html" class="">
+						<img src="./dist/assets/images/logo/code-ind.svg" alt="codebumble" class="w-36 lg:w-48">
+					</a>
+					<!-- logo -->
+					<div class="lg:hidden">
+						<a href="./case-study.html#cb-talk-to-us"
+							class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">book
+							a call</a>
+						<!-- responsive book a call button -->
+						<button class="hamburger hamburger--slider" type="button" id="menu-icon">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<!-- responsive  hamburger icon -->
+					</div>
+				</div>
+				<!-- .brand-wrap -->
+				<nav class="cb-nav max-h-144 overflow-scroll lg:overflow-visible" id="vl-nav">
+					<ul class="block lg:flex" id="menu">
+						<li class="cb-nav-item"><a href="./index.html" class="cb-nav-link">Home</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Services
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+							<ul class="cb-mega">
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="far fa-terminal sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Web Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Website with low cost. Choose Your Website Type and Stand Your Own.</p>
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-play sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Video Editing</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Animation/2D/3D Promotional Video. Make Your Business More Beautiful.</p>
+
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fal fa-pencil-paintbrush sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">UI/UX Design</h1>
+											</div>
+										</div>
+										<p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Aliquid commodi quasi ipsum impedit iusto optio?</p>
+									</a>
+								</li>
+
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-code sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Software Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Choose Your Own Script Right Now. You can Make an Order for Unlisted Product.</p>
+									</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="cb-nav-item"><a href="./about-us.html" class="cb-nav-link">About Us</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Career
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+
+							<ul class="cb-mega">
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fad fa-user-graduate sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get Training</h1>
+										</div>
+									</div>
+									<p class="my-3">Change Your Life and Professional. Be Creative & Make your Self Perfect.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Our
+												Courses</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Student
+												Verification</a></li>
+									</ul>
+								</li>
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fal fa-laptop-house sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get a Job</h1>
+										</div>
+									</div>
+									<p class="my-3">Show Your Telents and Use Your Time Properly to Shine Yourself.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Find your
+												preferred Job</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Employee
+												Verification</a></li>
+									</ul>
+								</li>
+							</ul>
+
+						</li>
+						<li class="cb-nav-item"><a href="#" class="cb-nav-link">Blog</a></li>
+					</ul>
+					<!-- navigation items -->
+					<a href="./case-study.html#cb-talk-to-us"
+						class="hidden lg:block bg-indigo-600 text-white hover:bg-white hover:text-indigo-600 rounded-full mx-2 py-2 px-4 text-center uppercase antialiased text-xs transition-all">book
+						a call</a>
+				</nav>
+				<!-- .cb-nav closed -->
+			</div>
+		</div>
+	</header>
+	<!-- Header Closed -->
+
+
+	<!-- Page Title -->
+	<section id="cb-page-title" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative lg:py-20 pt-20">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+			<div class="sec-heading">
+				<h2>UX/UI</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex inventore architecto expedita minus rem ratione reiciendis accusantium, consectetur sequi tempore temporibus recusandae laboriosam libero assumenda, corrupti voluptate at cumque.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<!-- How It Works -->
+	<section id="cb-how-it-works" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+			<div class="sec-heading">
+				<h2>How Does It Works</h2>
+			</div>
+			<div class="timeline">
+				<ul>
+				  <li class="item">
+					<div class="content">
+						<div class="heading">
+							<h4 class="step">Step 1</h4>
+							<h2 class="title">Section</h2>
+						</div>
+						<div class="main-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam porro reprehenderit quibusdam, quidem aspernatur id obcaecati velit voluptate iste deleniti perspiciatis rem, aliquam quasi eos facere voluptatem recusandae voluptas!</p>
+						</div>
+					</div>
+				  </li>
+				  <li class="item">
+					<div class="content">
+						<div class="heading">
+							<h4 class="step">Step 2</h4>
+							<h2 class="title">Section</h2>
+						</div>
+						<div class="main-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam porro reprehenderit quibusdam, quidem aspernatur id obcaecati velit voluptate iste deleniti perspiciatis rem, aliquam quasi eos facere voluptatem recusandae voluptas!</p>
+						</div>
+					</div>
+				  </li>
+				  <li class="item">
+					<div class="content">
+						<div class="heading">
+							<h4 class="step">Step 3</h4>
+							<h2 class="title">Section</h2>
+						</div>
+						<div class="main-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam porro reprehenderit quibusdam, quidem aspernatur id obcaecati velit voluptate iste deleniti perspiciatis rem, aliquam quasi eos facere voluptatem recusandae voluptas!</p>
+						</div>
+					</div>
+				  </li>
+				  <li class="item">
+					<div class="content">
+						<div class="heading">
+							<h4 class="step">Step 4</h4>
+							<h2 class="title">Section</h2>
+						</div>
+						<div class="main-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam porro reprehenderit quibusdam, quidem aspernatur id obcaecati velit voluptate iste deleniti perspiciatis rem, aliquam quasi eos facere voluptatem recusandae voluptas!</p>
+						</div>
+					</div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<!-- Key Benefits -->
+	<section id="cb-key-benefits" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container">
+			<div class="sec-heading">
+				<h2>Key Benefits</h2>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-8">
+				<div class="blurb">
+					<div class="icon">
+						<i class="fal fa-analytics"></i>
+					</div>
+					<div class="heading">
+						<h4>Customer Acquisition & Retention</h4>
+					</div>
+					<div class="content">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius ipsam ad nesciunt? Natus quae beatae consequuntur saepe quo tempore quibusdam itaque dolor sunt quis officia, sint provident nulla laudantium at? Dignissimos atque saepe quisquam harum sit, laudantium porro consectetur unde beatae hic aliquid repudiandae ea asperiores reprehenderit. Minima, ratione!
+						</p>
+					</div>
+				</div>
+				<div class="blurb">
+					<div class="icon">
+						<i class="fal fa-analytics"></i>
+					</div>
+					<div class="heading">
+						<h4>Customer Acquisition & Retention</h4>
+					</div>
+					<div class="content">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius ipsam ad nesciunt? Natus quae beatae consequuntur saepe quo tempore quibusdam itaque dolor sunt quis officia, sint provident nulla laudantium at? Dignissimos atque saepe quisquam harum sit, laudantium porro consectetur unde beatae hic aliquid repudiandae ea asperiores reprehenderit. Minima, ratione!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<!-- Why Us -->
+	<section id="cb-why-us" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container">
+			<div class="sec-heading">
+				<h2>Why Us?</h2>
+			</div>
+			<div class="main-content">
+				<div class="left-big-img">
+					<img src="./dist/assets/images/contents/people.jpg" alt="">
+				</div>
+				<ul class="accordion">
+					<li class="item">
+						<div class="heading">
+							<h2>Front-end Developer</h2>
+						</div>
+						<div class="content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem ullam dolor iusto eos sint nisi amet ex veniam aspernatur esse voluptatibus odio, maiores eum.
+						</div>
+					</li>
+					<li class="item">
+						<div class="heading">
+							<h2>Back-end Developer</h2>
+						</div>
+						<div class="content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem ullam dolor iusto eos sint nisi amet ex veniam aspernatur esse voluptatibus odio, maiores eum.
+						</div>
+					</li>
+					<li class="item">
+						<div class="heading">
+							<h2>Manager</h2>
+						</div>
+						<div class="content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem ullam dolor iusto eos sint nisi amet ex veniam aspernatur esse voluptatibus odio, maiores eum.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<!-- Tools We Use -->
+	<section id="cb-tools-we-use" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container">
+			<div class="sec-heading">
+				<h2>Tools We Use</h2>
+			</div>
+			<div class="splide pb-8 tools-slider" id="tools-slider">
+				<div class="splide__track">
+					<div class="splide__list">
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+						<div class="splide__slide slide-item">
+							<div class="brand">
+								<img src="./dist/assets/images/tools/Figma.png" alt="">
+							</div>
+							<div class="heading">
+								<h4>Figma</h4>
+							</div>
+							<div class="content">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus corporis soluta dolor quasi illo neque quibusdam minima, amet laboriosam eum quo cupiditate. Ratione harum, ad sed tenetur iusto doloremque?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+
+	<!-- Other Serivices -->
+	<section id="cb-otehr-services" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container">
+			<div class="sec-heading">
+				<h2>Other Services</h2>
+			</div>
+			<div class="services">
+				<div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-16 pb-8">
+					<div class="service-item">
+						<div class="icon">
+							<i class="fab fa-product-hunt"></i>
+						</div>
+						<div class="heading">
+							<h3>Product Scope</h3>
+						</div>
+						<div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae.</div>
+					</div>
+					<div class="service-item">
+						<div class="icon">
+							<i class="fab fa-product-hunt"></i>
+						</div>
+						<div class="heading">
+							<h3>Product Scope</h3>
+						</div>
+						<div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae.</div>
+					</div>
+					<div class="service-item">
+						<div class="icon">
+							<i class="fab fa-product-hunt"></i>
+						</div>
+						<div class="heading">
+							<h3>Product Scope</h3>
+						</div>
+						<div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+
+	<!-- Talk To Us -->
+	<section id="cb-talk-to-us" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative py-20">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+			<div class="sec-heading">
+				<h2>Talk to us and get your project moving!</h2>
+			</div>
+			<div class="lg:flex dark:bg-darkviolet">
+				<div class="lg:w-2/5 mb-4 lg:mb-0">
+					<div class="cb-after-submit-form">
+						<div class="heading">
+							<h4>This is exactly what will happen after you submit your form:</h4>
+						</div>
+						<video
+							id="videoPlayer"
+							class="video-js vjs-big-play-centered"
+							preload="auto"
+							height="264"
+							poster=""
+							data-setup="{}"
+  						>
+							<source src="./dist/assets/videos/cbd.mp4" type="video/mp4"/>
+							<source src="MY_VIDEO.webm" type="video/webm"/>
+							<p class="vjs-no-js">
+							To view this video please enable JavaScript, and consider upgrading to a
+							web browser that
+							<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+							</p>
+  						</video>
+						<div class="point">
+							<ul>
+								<li class="item">We will respond to you within 24 hours</li>
+								<li class="item">We’ll sign an NDA if requested.</li>
+								<li class="item">You'll be talking to product and tech experts (no account managers).</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-3/5">
+					<div class="book-a-call">
+						<form>
+							<div class="input-group">
+								<div class="input-item">
+									<input type="text" name="name" autocomplete="off" required>
+									<label class="label-name" for="name">
+										<span class="content">Name</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-group">
+								<div class="input-item">
+									<input type="text" name="email" autocomplete="off" required>
+									<label class="label-name" for="email">
+										<span class="content">Email</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-group">
+								<div class="input-item description">
+									<textarea name="description" id="description" required></textarea>
+									<label class="label-name" for="description">
+										<span class="content">Project Description</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="budget">
+									<select name="budget" required>
+										<option class="hidden"></option>
+										<option value="1">budget 1</option>
+										<option value="2">budget 2</option>
+										<option value="3">budget 3</option>
+										<option value="4">budget 4</option>
+									  </select>
+									<label class="label-name" for="email">
+										<span class="content">Budget</span>
+									</label>
+								</div>
+							</div>
+							<button class="btn" type="submit">Book A Call</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="./about-us.html">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="https://facebook.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+					<!-- <li class="media-icon"><a href="#" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li> -->
+					<li class="media-icon"><a href="https://instagram.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+					<li class="media-icon"><a href="https://github.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+					<li class="media-icon"><a href="https://linkedin.com/company/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Closed -->
+
+	<!-- back to top -->
+	<div class="scroll-progress">
+		<svg class="circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		   <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+		</svg>
+	</div>
+
+	<!-- app.js -->
+	<!-- splide.JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+	<script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+	<script src="dist/js/common.js"></script>
+	<script src="dist/js/service-details.js"></script>
+
+
+</body>
+</html>

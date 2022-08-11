@@ -1,0 +1,16 @@
+.cb-hero {
+
+	.gradient-overlay {
+		@apply block absolute right-0 top-0 bottom-0 left-0;
+		z-index: -1;
+		background-image: linear-gradient(90deg, rgba(16, 7, 39, 1) 0%, rgba(16, 7, 39, 0.99) 25%, rgba(16, 7, 39, 0.95) 50%, rgba(16, 7, 39, 0.7) 100%);
+		// , rgba(16,7,39, 0.4) 100%
+	}
+
+	.video-background {
+		@apply w-auto h-full min-w-full min-h-full my-0 mx-auto transform -translate-x-2/4 block absolute top-0 right-0 bottom-0 left-0 object-cover box-border pointer-events-none opacity-95;
+		margin-left: 50vw;
+		z-index: -2;
+	}
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "codebumble",
+  "version": "1.2.1",
+  "description": "software development company",
+  "main": "index.js",
+  "scripts": {
+    "build": "mix",
+    "watch": "mix watch",
+    "watch-prod": "cross-env NODE_ENV=production npm run watch",
+    "prod": "cross-env NODE_ENV=production npm run build"
+  },
+  "keywords": [
+    "codebumble"
+  ],
+  "author": "Md. Saifur Rahman",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.39",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "tailwindcss": "^3.0.7"
+  },
+  "dependencies": {}
+}

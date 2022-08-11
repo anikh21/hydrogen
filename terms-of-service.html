@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="theme-color" content="rgb(79, 70, 229)">
+	<title>Learn, Implementation, Production - Codebumble Inc.</title>
+	<link rel="shortcut icon" href="" type="image/x-icon" id="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="./dist/css/libs/fontawesome.css" rel="stylesheet">
+	<!-- tailwind -->
+	<link rel="stylesheet" href="./dist/css/tailwind.css">
+	<!-- style -->
+	<link rel="stylesheet" href="./dist/css/terms-and-service.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+	<header class="my-4 lg:dark:text-white absolute w-full z-10">
+		<div class="container">
+			<div class="block lg:flex items-center justify-between max-h-12">
+				<div class="brand-wrap">
+					<a href="./index.html" class="">
+						<img src="./dist/assets/images/logo/code-white.svg" alt="codebumble" class="w-36 lg:w-48">
+					</a>
+					<!-- logo -->
+					<div class="lg:hidden">
+						<a href="./case-study.html#cb-talk-to-us"
+							class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">book
+							a call</a>
+						<!-- responsive book a call button -->
+						<button class="hamburger hamburger--slider" type="button" id="menu-icon">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<!-- responsive  hamburger icon -->
+					</div>
+				</div>
+				<!-- .brand-wrap -->
+				<nav class="cb-nav max-h-144 overflow-scroll lg:overflow-visible" id="vl-nav">
+					<ul class="block lg:flex" id="menu">
+						<li class="cb-nav-item"><a href="./index.html" class="cb-nav-link">Home</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Services
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+							<ul class="cb-mega">
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="far fa-terminal sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Web Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Website with low cost. Choose Your Website Type and Stand Your Own.</p>
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-play sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Video Editing</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Animation/2D/3D Promotional Video. Make Your Business More Beautiful.</p>
+
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fal fa-pencil-paintbrush sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">UI/UX Design</h1>
+											</div>
+										</div>
+										<p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Aliquid commodi quasi ipsum impedit iusto optio?</p>
+									</a>
+								</li>
+
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-code sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Software Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Choose Your Own Script Right Now. You can Make an Order for Unlisted Product.</p>
+									</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="cb-nav-item"><a href="./about-us.html" class="cb-nav-link">About Us</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Career
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+
+							<ul class="cb-mega">
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fad fa-user-graduate sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get Training</h1>
+										</div>
+									</div>
+									<p class="my-3">Change Your Life and Professional. Be Creative & Make your Self Perfect.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Our
+												Courses</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Student
+												Verification</a></li>
+									</ul>
+								</li>
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fal fa-laptop-house sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get a Job</h1>
+										</div>
+									</div>
+									<p class="my-3">Show Your Telents and Use Your Time Properly to Shine Yourself.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Find your
+												preferred Job</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Employee
+												Verification</a></li>
+									</ul>
+								</li>
+							</ul>
+
+						</li>
+						<li class="cb-nav-item"><a href="#" class="cb-nav-link">Blog</a></li>
+					</ul>
+					<!-- navigation items -->
+					<a href="./case-study.html#cb-talk-to-us"
+						class="hidden lg:block bg-indigo-600 text-white hover:bg-white hover:text-indigo-600 rounded-full mx-2 py-2 px-4 text-center uppercase antialiased text-xs transition-all">book
+						a call</a>
+				</nav>
+				<!-- .cb-nav closed -->
+			</div>
+		</div>
+	</header>
+	<!-- Header Closed -->
+
+	<section id="cb-hero-bg" class="overflow-hidden cb-hero relative">
+		<div class="gradient-overlay image"></div>
+		<img src="./src/assets/images/contents/terms.jpg" class="overlay image" alt="">
+		<div class="container">
+			<div class="flex flex-col justify-center text-white">
+				<h2 class="lg:text-5xl text-2xl font-bold lg:leading-tight leading-snug lg:mb-3 mx-auto">Terms of Service</h2>
+				<p class="mx-auto md:text-base xs:text-sm text-center">Please read these terms and conditions carefully before using Our Service.</p>
+				<p class="mx-auto md:text-base xs:text-sm text-center">Last updated: December 22, 2021</p>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section Closed -->
+	<section id="cb-terms-and-conditons" class="bg-gray-100 overflow-hidden dark:bg-deepdark relative py-20">
+			<div class="blob-bg">
+				<div class="blob blob-1">
+					<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+				</div>
+				<div class="blob blob-2">
+					<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+				</div>
+			</div>
+			<div class="container z-10 relative">
+				<div class="shadow-lg rounded-lg bg-gray-200 dark:bg-darkviolet">
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Acceptance</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>You may only access or use the Sites or Services, as defined herein if you agree to be bound by these Terms of Service ("TOS"). By accessing or using the Sites or Services, you imply that your assent to these TOUs. If you do not agree to be restrained by these TOS, do not access or use the Services.</p>
+							</div>
+							<!-- <div class="items">
+								<h3 class="sec-heading">Download:</h3>
+								<ul class="list-items">
+									<li><a href="#">.pdf</a></li>
+									<li><a href="#">.doc</a></li>
+									<li><a href="#">.rtf</a></li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600">Coverage of these TOS</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white items-start">
+							<div class="details">
+								<p>Codebumble, Inc. ("Codebumble") reserves the right to update these TOS at any time without notice to you. These TOS apply to the above-listed websites of Codebumble, successor domain names that Codebumble may make available from time to time, and the online services contained or hosted on those Codebumble websites (collectively known as the "Sites or Services"). To the extent that certain areas of the Sites or Services require registration and/or may be subject to additional terms and conditions of use, Codebumble will provide you with notice of those additional terms and conditions on registration. These TOS do not apply to your use of unaffiliated sites to which any of the Codebumble Sites merely link.</p>
+							</div>
+							<div class="items"></div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600">Software, Records, or <br> Online Services Sold or <br>Circulated, Releases</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>Codebumble may offer an assortment of software, documents, or online services for trial or purchase through the Services or Sites. In some cases, the software, documents, or online services offered for trial or purchase may be subject to license terms that conflict with these TOS. Should such a conflict occur, the conflicting license terms governing the software, documents, or online services will replace the terms in these TOS. However, the conflicting terms will govern only to the period that is necessary and only for the specific applicable software, documents, or online services; in all other regards, these TOS will remain operative.</p>
+
+								<p>IN NO CIRCUMSTANCE WILL CODEBUMBLE AND/OR ITS RESPECTIVE SUPPLIERS BE RESPONSIBLE FOR ANY SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, FAILURE OR OTHER TORTIOUS ACTION, Occurring OUT OF OR IN CONNECTION WITH THE USE OF THE SITES OR SERVICES INCLUDING WITHOUT LIMITATION ANY SOFTWARE, ONLINE SERVICES OR DOCUMENTS AVAILABLE THROUGH THE SITES OR SERVICES.</p>
+
+								<ul class="list-[circle]">
+									<li class="ml-6">
+										<h4 class="text-indigo-500">Software:</h4>
+										<p>Any software which is made available to download from the Sites or Services ("Software") is the copyrighted work of Codebumble and/or its suppliers. Use of the Software or services is ruled by the terms of the license agreement. If any, which escorts or is included with the Software. Any use, reproduction, or redistribution of the Software not per the applicable license agreement is expressly prohibited by law and may result in civil or criminal penalties.</p>
+
+										<p>THE SOFTWARE IS CERTIFIED, IF AT ALL, ONLY ACCORDING TO THE TERMS OF THE APPLICABLE LICENSE AGREEMENT. EXCEPT AS CERTIFIED IN THE LICENSE AGREEMENT, CODEBUMBLE HEREBY DISCLAIMS ALL Assurances AND States CONCERNING THE SOFTWARE, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+											
+										<p>FOR YOUR CONVENIENCE, CODEBUMBLE MAY MAKE AVAILABLE THROUGH THE SITES OR SERVICES PATCHES, TOOLS, OR UTILITIES FOR USE AND/OR DOWNLOAD. CODEBUMBLE DOES NOT MAKE ANY ASSURANCES CONCERNING THE ACCURACY OF THE RESULTS OR OUTPUT THAT DERIVES FROM SUCH USE OF THE PATCHES, TOOLS, OR UTILITIES.</p>
+									</li>
+									<li class="ml-6">
+										<h4 class="text-indigo-500">Documents:</h4>
+										<p>Permission to use the documents; such as help topics, white papers, datasheets, and FAQs ("Documents") that are made available through the Sites or Services is granted.
+										Provided that (1) the copyright notice which exists on the document appears in all copies, (2) use of the Documents is for informational and non-commercial or personal use only and will not be copied or posted on any network computer or broadcast on any media, and (3) no modifications of the Documents are made. Use for any other purpose, unless permission is otherwise granted by the Document copyright owner, is expressly prohibited by law, and may result in civil or criminal penalties.</p>
+
+										<p>Documents pinpointed above do not include the design or layout of the Sites or Services. Elements of the design or layout of the Sites or Services are protected by trade dress, trademark, unfair competition, copyright, and other laws and may not be copied or replicated in whole or in part. No logo, graphic, sound, or image from the Sites or Services may be copied or shared unless expressly authorized by Codebumble.</p>
+											
+										<p>CODEBUMBLE AND/OR ITS SUPPLIERS MAKE NO MANIFESTATIONS ABOUT THE SUITABILITY OF THE INFORMATION CONTAINED IN THE DOCUMENTS FOR ANY PURPOSE. THE DOCUMENTS ARE FED "AS IS" WITHOUT A ASSURANCE OF ANY KIND. CODEBUMBLE AND ITS SUPPLIERS HEREBY DISCLAIM ALL ASSURANCES AND CONDITIONS CONCERNING THIS INFORMATION, INCLUDING ALL ASSURANCES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, POINTED, OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="items"></div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Fair Use Policy</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>The objective of Codebumble is to provide high-quality services to the customers. Codebumble reserves the right, in Codebumble's only and exclusive preference, to remove any content for any reason, including but not limited to, reasons listed in this Fair Use Policy. The Fair Use Policy below defines the actions relating to the content provided through the Sites which Codebumble considers to be inappropriate and thus prohibited. The examples named in this list are in addition to the types of content recognized in any other applicable agreement, are non-exclusive, and are provided exclusively for your guidance. If you are unsure whether any considered use or action is permitted, please send an email in advance to info@codebumble.net and, Codebumble will assist you.</p>
+
+								<h4 class="text-indigo-600 mb-4">Actions which Codebumble considers unacceptable include, but are not limited to, the following:</h4>
+								<p>Codebumble may and will terminate your access credentials (i.e., any user IDs, user names, passwords, etc.) to the Sites or Services immediately if, in its only tactfulness. Codebumble believes that your conduct fails to coordinate these TOS or any other applicable agreement, terms, or conditions. Without restricting the foregoing, if you use or attempt to use the Sites or Services for any purposes other than the purposes intended or contemplated as acceptable by Codebumble (including without limitation by tampering, hacking, modifying, or otherwise corrupting the security or functionality of the Sites or Services), you may also be subject to civil and criminal liability.
+								<p>
+								Using the Sites or Services to post any content of the nature outlined in 47 U.S.C. Section 230(c)(2)(A) (i.e., material that is obscene, lewd, lascivious, filthy, excessively violent, harassing, or otherwise objectionable);
+								</p>
+								<p>
+								Using the Sites or Services to post any content that advocates, encourages, or otherwise encourages brutality against any governments, organizations, groups, or individuals or which provides instruction, information, or assistance in causing or carrying out such violence;
+								</p>
+								<p>
+								Using the Sites or Services to post any content that holds Codebumble (including its affiliates), employees or shareholders, or any other person or entity up to public insult or ridicule;.
+								</p>
+								<p>
+								Using the Sites or Services to post any content that violates any copyrights, patents, trademarks, service marks, trade names, trade secrets or other intellectual property rights of others.
+								</p>
+								<p>
+								Failing to acquire all required permissions when using the Sites or Services to receive, upload, download, display, distribute, or execute programs or perform other works protected by intellectual property laws including copyright and patent laws.
+								</p>
+								<p>
+								Deleting or altering author attributes or copyright notices, unless expressly permitted in writing by the author or owner.
+								</p>
+								<p>
+								Using the Sites or Services in a tortious manner, including the posting of libelous, defamatory, scandalous, threatening, harassing or, private information without the permission of the person(s) involved, or posting content that is likely to cause emotional distress.
+								</p>
+								<p>
+								Introducing viruses, worms, harmful code and/or Trojan horses on the Internet.
+								</p>
+								<p>
+								Belying your identity to access the Sites or Services, or Belying your identity in any way while using the Sites or Services, or with the aid of the Sites or Services.
+								</p>
+								<p>
+								Using the Sites or Services in any way to dispatch or circulate any unsolicited bulk or unsolicited commercial email (i.e., spam).
+								</p>
+								<p>
+								Using any tools, programs, robotic algorithms, or products to automatically download or "spider" the Sites or Services.
+								</p>
+								<p>
+								Otherwise using the Sites or Services in violation of any applicable laws.
+								</p>
+								<p>
+								Using the Sites or Services to resell, remarket, repackage or redistribute any part of the Services or offer these services to others.</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">User Accounts, Passwords, and the Obligation of Confidentiality</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>If any part of the Sites or Services requires you to register a user account, you must complete the registration process by providing us with current, complete, and accurate information as prompted by the applicable registration process. You will also choose a password and, where appropriate, a user name or ID. By electronically registering a user account, you signify that you consent, whether by electronic signature, "clickwrap" assent, or other applicable manifestation of assent, to enter relevant agreements through electronic means and to be restrained by the terms and conditions to which you assent electronically, by whatever means. You also acknowledge that other parties have registered accounts with Codebumble for the Sites and Services and may in some cases post-user-generated content. You acknowledge that Codebumble has minimal control over such user-generated content. Therefore, Codebumble cannot and does not make any claim that the content contained in the Sites and Services is accurate, relevant to you, or inoffensive. </p>
+
+								<p>You are altogether responsible for preserving the confidentiality of your password and account information (including the user name or ID). Similarly, you are altogether responsible for any events which are caused to occur by any person or entity who may be accessing or using any of the Sites or Services and whose permission for access to the Sites or Services are authenticated by your credentials (i.e., the user ID or user name and password). You agree to notify Codebumble immediately of any unauthorized use of your account or any other breach of security that may be associated with the confidentiality of your account information. Codebumble will not be liable for any loss you may incur as a result of someone else using your confidential account information, either with or without your knowledge. However, you could be held liable for losses incurred by Codebumble or another party due to the actions of another person or entity who is using your account or password. You may not use any account other than your own to access or use the Sites or Services without the express permission of the owner of that other account.</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Intellectual Property Rights</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>Codebumble and/or its suppliers have all rights, title, and interest in and to the Sites and Services, including all copyrights, patents, trade secrets, trademarks, and other intellectual property rights. Codebumble reserves all rights not expressly granted. These TOS do not grant or imply any rights to any Codebumble or supplier trademarks, trade names, or logos. Codebumble only grants permission to a third party to use Codebumble-owned trademarks and/or logos according to the conditions and specifications listed on the Codebumble Trademark Notice and Policy.</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Privacy</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>Please read Codebumble's <a href="./privacy-policy.html">Privacy Policy</a> for information about Codebumble's collection and use of your personal information. The Sites or Services may be managed by their privacy policies or statements, as referenced in the applicable agreements and account activation procedures specific to the Sites or Services.</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Warnings and Instructions for Making Claims of Copyright Violation</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>According to Title 17, United States Code, Section 512(c)(2), notifications of claimed copyright infringement should be sent to Codebumble's designated agent. NOTIFICATIONS OF COPYRIGHT VIOLATION MUST CONFORM TO THE FOLLOWING PROCEDURE - NONCONFORMING NOTICES WILL NOT RECEIVE A RESPONSE. See the Codebumble DMCA Policy, including the Notice and Procedure for Making Claims of Copyright Infringement.</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading">
+							<h2 class="text-indigo-600 heading-content">Modification or Termination of the Sites or Services</h2>
+						</div>
+						<div class="md:flex lg:w-2/3 md:w-full lg:dark:text-white">
+							<div class="details">
+								<p>Unless otherwise obligated by a separate agreement, Codebumble reserves the right to modify or discontinue the Sites or Services temporarily or permanently, with or without notice and in its sole discretion. This includes the right to modify, discontinue or remove any content, postings, links, pages, services, or other materials at any time and for any reason. You agree that Codebumble shall not be liable to you for any modification, general suspension, or discontinuance of any services. Codebumble may, in its sole discretion, refuse or restrict anyone from access to any or all of the Sites or Services at any time.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Terms & Conditons Closed -->
+
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="./about-us.html">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="https://facebook.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+					<!-- <li class="media-icon"><a href="#" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li> -->
+					<li class="media-icon"><a href="https://instagram.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+					<li class="media-icon"><a href="https://github.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+					<li class="media-icon"><a href="https://linkedin.com/company/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Closed -->
+
+	<!-- back to top -->
+	<div class="scroll-progress">
+		<svg class="circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		   <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+		</svg>
+	</div>
+
+	<!-- app.js -->
+	<script src="dist/js/common.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+@keyframes splide-loading {
+	0% {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(1turn)
+	}
+}
+
+.splide__container {
+	@apply relative box-border;
+}
+
+.splide__list {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: -webkit-max-content;
+	width: max-content;
+	will-change: transform;
+}
+
+.splide.is-active .splide__list {
+	@apply flex;
+}
+
+.splide__pagination {
+	@apply inline-flex items-center flex-wrap justify-center m-0;
+}
+
+.splide__pagination li {
+	line-height: 1;
+	@apply list-none inline-flex m-0 justify-center items-center;
+}
+
+.splide {
+	@apply invisible;
+}
+
+.splide,
+.splide__slide {
+	outline: none;
+	@apply relative;
+}
+
+.splide__slide {
+	list-style-type: none !important;
+	@apply box-border my-0 mr-8 ml-0 flex-shrink-0;
+}
+
+.splide__slide img {
+	@apply align-bottom;
+}
+
+.splide__slider {
+	@apply relative;
+}
+
+.splide__spinner {
+	border-radius: 50%;
+	border: 2px solid #999;
+	border-left-color: transparent;
+	animation: splide-loading 1s linear infinite;
+	@apply absolute top-0 left-0 right-0 bottom-0 m-auto inline-block w-5 h-5;
+}
+
+.splide__track {
+	@apply overflow-hidden z-0 relative;
+}
+
+.splide--draggable>.splide__track>.splide__list>.splide__slide {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.splide--fade>.splide__track>.splide__list {
+	display: block
+}
+
+.splide--fade>.splide__track>.splide__list>.splide__slide {
+	@apply absolute top-0 left-0 z-0 opacity-0;
+}
+
+.splide--fade>.splide__track>.splide__list>.splide__slide.is-active {
+	opacity: 1;
+	@apply relative opacity-100;
+}
+
+.splide--rtl {
+	direction: rtl;
+}
+
+.splide--ttb>.splide__track>.splide__list {
+	display: block
+}
+
+.splide--ttb>.splide__pagination {
+	width: auto
+}

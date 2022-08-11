@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+@import './global/nav', './global/hamburger', './global/hero', './global/footer', './global/splide', './global/splide-pagination', './global/scroll';
+
+.h-75vh {
+	min-height: 75vh;
+}
+
+.btn {
+	@apply rounded transition-all text-white border-2 border-transparent hover:border-indigo-600 bg-indigo-600 hover:bg-white hover:text-indigo-600 py-3 px-5 font-bold tracking-wider shadow-xl hover:shadow-2xl inline-block flex mt-6 lg:mt-0 mx-auto;
+}
+
+header{
+	#vl-nav {
+	>ul {
+		.cb-nav-item {
+			@apply lg:mx-3 text-indigo-600 dark:text-gray-400;
+
+			.cb-nav-link {
+				@apply hover:bg-indigo-600 lg:hover:bg-transparent hover:text-indigo-600 dark:hover:text-gray-400;
+
+				&::before {
+					@apply bg-indigo-600 dark:bg-gray-400;
+				}
+			}
+		}
+	}
+}
+.hamburger-inner{
+	@apply bg-indigo-600;
+	&::before{
+		@apply bg-indigo-600;
+	}
+	&::after{
+		@apply bg-indigo-600
+	}
+}
+.hamburger.is-active .hamburger-inner{
+	@apply bg-indigo-600;
+	&.hamburger-inner::after{
+		@apply bg-indigo-600;
+	}
+}
+}
+
+
+/* ********** Sselect Type Of Application ********** */
+#cb-select-type-of-application{
+	@apply bg-gray-100 overflow-hidden dark:bg-deepdark relative pb-10 pt-20;
+	@apply z-0;
+	.select-application{
+			@apply w-full md:w-2/3 mx-auto mb-8 mt-8 py-4;
+			h2{
+				@apply font-bold text-3xl dark:text-gray-300;
+			}
+			.input-item{
+				.applications{
+					@apply h-12 w-full m-1 overflow-hidden relative;
+					select {
+						@apply bg-transparent w-full border-none dark:text-gray-400 py-5 outline-none absolute;
+						left: -5px;
+						&:focus + .label-name::after,
+						&:valid + .label-name::after{
+							@apply transform translate-x-0;
+						}
+						&:focus + .label-name .content,
+						&:valid + .label-name .content{
+							@apply text-indigo-600;
+							font-size: 14px;
+							transform: translateY(-125%);
+						}
+						option{
+							@apply dark:bg-darkviolet;
+							padding: 30px;
+						}
+					}
+					label{
+						@apply dark:text-gray-400 h-full w-full absolute bottom-0;
+						border-bottom: 1px solid rgba(79, 70, 229, var(--tw-bg-opacity));
+						pointer-events: none;
+						left: -1px;
+						&::after{
+							@apply h-full w-full absolute left-0 -bottom-px transform -translate-x-full;
+							content: '';
+							border-bottom: 3px solid rgba(79, 70, 229, var(--tw-bg-opacity));
+							transition: transform .3s ease;
+						}
+						.content{
+							@apply absolute left-0 transition-all;
+							bottom: 5px;
+						}
+					}
+				}
+			}
+	}
+	.selected-service-wrapper{
+		.item{
+			@apply hidden;
+			.calculate-project-price{
+				@apply bg-gray-50 dark:bg-darkviolet w-full lg:w-2/3 shadow-lg rounded-lg p-4;
+				.select-your-range{
+					@apply grid grid-cols-2 md:grid-cols-3 gap-8 py-4;
+					border-bottom: 1px solid rgba(79, 70, 229, var(--tw-bg-opacity));
+					h3{
+						@apply text-xl font-bold dark:text-gray-300 mb-4;
+					}
+					.btns{
+						@apply flex flex-col;
+						.cb-radio-btn {
+							@apply my-2 mr-2 p-1 rounded-full inline-flex cursor-pointer transition-all duration-300 ease-in;
+							-webkit-tap-highlight-color: transparent;
+							input[type='radio'] {
+								@apply bg-none h-5 w-5 border-0 rounded-full appearance-none pointer-events-none transition-shadow duration-300;
+								border: 0;
+								box-shadow: inset 0 0 0 1px #9f9f9f;
+								box-shadow: inset 0 0 0 1.5px #9f9f9f;
+								&:focus {
+									outline: none;
+								}
+								&:checked{
+									box-shadow: inset 0 0 0 6px #4f46e5;
+								}
+							}
+							span {
+								@apply inline-block align-middle leading-5 px-2 dark:text-gray-400;
+							}
+						}
+					}
+				}
+				.prices{
+					@apply flex;
+					.price{
+						@apply text-indigo-600 w-1/2 text-center py-4;
+						border-bottom: 1px solid rgba(79, 70, 229, var(--tw-bg-opacity));
+						span{
+							@apply text-3xl;
+						}
+						h2{
+							@apply font-bold text-3xl md:text-6xl;
+							span{
+								@apply text-3xl md:text-6xl;
+							}
+						}
+					}
+				}
+				.commnet{
+					@apply py-4;
+					p{
+						@apply text-center dark:text-gray-400;
+					}
+				}
+			}
+			.details{
+				@apply bg-gray-50 dark:bg-darkviolet w-full md:w-1/2 lg:w-1/3 rounded-lg mt-8 lg:mt-0 mx-auto lg:mx-0 lg:ml-16 p-4 shadow-lg;
+				height: fit-content;
+				h3{
+					@apply text-3xl font-bold dark:text-gray-300;
+				}
+				p{
+					@apply my-4 dark:text-gray-400;
+				}
+				a.btn{
+					@apply text-center mx-0 w-32 p-2 rounded-full flex justify-center;
+				}
+			}
+			&.active{
+				@apply block lg:flex;
+			}
+		}
+	}	
+	&::before{
+		@apply h-full w-full absolute bottom-0 left-0 opacity-10;
+		content: '';
+		background: url('../assets/images/contents/wave-bg.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+
+/* ********** Price Card ********** */
+#cb-price-card{
+	@apply bg-gray-100 overflow-hidden dark:bg-deepdark py-20 relative z-10;
+	.blob-bg {
+		.blob {
+			@apply absolute left-0 pointer-events-none w-32;
+			height: 410px;
+		}
+
+		.blob-1 {
+			top: 12%;
+			opacity: 0.04;
+		}
+
+		.blob-2 {
+			top: 26%;
+			opacity: 0.06;
+		}
+	}
+	.sec-heading{
+		@apply text-center w-full md:w-2/3 mx-auto mb-8;
+		h2{
+			@apply dark:text-gray-300 font-bold text-5xl md:text-5xl mb-4;
+		}
+		p{
+			@apply dark:text-gray-400;
+		}
+	}
+	.main-content{
+		.card{
+			@apply bg-gray-100 dark:bg-darkviolet h-80 p-4 shadow-lg rounded-lg md:flex items-center justify-center hover:shadow-xl transition-all duration-300 transform translate-y-0 hover:-translate-y-1;
+			.meta{
+				@apply text-center mb-8 md:mb-0;
+				.title{
+					@apply text-2xl dark:text-gray-300 font-bold;
+				}
+				.price{
+					@apply text-indigo-600 text-6xl font-bold my-4;
+				}
+				.duration{
+					@apply text-gray-400;
+				}
+			}
+			.content{
+				@apply text-center md:text-left md:ml-12 text-gray-600 dark:text-gray-400;
+			}
+		}
+	}
+}
+
+
+/* ********** How We Get to Our Prices ********** */
+#cb-how-we-get-to-our-prices{
+	@apply bg-gray-100 overflow-hidden dark:bg-deepdark py-20 relative z-10;
+	.blob-bg {
+		.blob {
+			@apply absolute left-0 pointer-events-none w-32;
+			height: 410px;
+		}
+
+		.blob-1 {
+			top: 12%;
+			opacity: 0.04;
+		}
+
+		.blob-2 {
+			top: 26%;
+			opacity: 0.06;
+		}
+	}
+	.sec-heading{
+		@apply text-center w-full md:w-2/3 mx-auto mb-8;
+		h2{
+			@apply dark:text-gray-300 font-bold text-5xl md:text-5xl mb-4;
+		}
+		p{
+			@apply dark:text-gray-400;
+		}
+	}
+	.learn-more-btns{
+		@apply w-full md:w-2/3 mx-auto;
+		ul{
+			@apply font-bold text-xl;
+			li{
+				@apply text-indigo-600 w-10/12 cursor-pointer border-b-2 border-indigo-600 flex justify-between mb-4 mx-auto pb-4;
+				&::after{
+					content: '\f0ab';
+					font-family: "Font Awesome 5 Pro";
+					margin-right: .5rem;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+/* ********** How We Get to Our Prices ********** */
+#cb-seed.explained{
+	@apply bg-gray-100 overflow-hidden dark:bg-deepdark py-20 relative z-10;
+	.blob-bg {
+		.blob {
+			@apply absolute left-0 pointer-events-none w-32;
+			height: 410px;
+		}
+
+		.blob-1 {
+			top: 12%;
+			opacity: 0.04;
+		}
+
+		.blob-2 {
+			top: 26%;
+			opacity: 0.06;
+		}
+	}
+	.main-content-1,
+	.main-content-2{
+		@apply lg:flex;
+		.content{
+			@apply bg-gray-100 dark:bg-darkviolet w-full lg:w-2/3 p-4 lg:shadow-none shadow-lg rounded-lg relative;
+			h2{
+				@apply font-bold dark:text-gray-300 text-4xl mb-8;
+			}
+			p{
+				@apply font-extralight text-xl md:text-3xl text-gray-400;
+			}
+		}
+	}
+	.main-content-1{
+		@apply mb-12;
+	.left-big-img{
+		@apply w-1/3 hidden lg:block;
+		img{
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.content{
+		@apply ml-0 lg:ml-8 xl:ml-32;
+	}
+	}
+	.main-content-2{
+		@apply mb-20;
+		.content{
+			@apply mr-0 lg:mr-8 xl:mr-32;
+		}
+		.right-big-img{
+			@apply w-1/3 hidden lg:block;
+			img{
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}
+
+/* ********** ********** */
+#cb-services{
+	.blob-bg {
+		.blob {
+			@apply absolute left-0 pointer-events-none w-32;
+			height: 410px;
+		}
+
+		.blob-1 {
+			top: 12%;
+			opacity: 0.04;
+		}
+
+		.blob-2 {
+			top: 26%;
+			opacity: 0.06;
+		}
+	}
+	.sec-heading{
+		@apply text-center mb-8;
+		h2{
+			@apply dark:text-gray-300 font-bold text-5xl;
+		}
+	}
+	.services{
+		.service-item{
+			@apply bg-gray-100 dark:bg-darkviolet text-center xl:h-96 xl:w-96 lg:h-72 lg:w-72 md:h-80 md:w-80 mb-12 lg:mb-0 transition-all transform translate-y-0 duration-700 p-4 shadow-lg rounded-lg hover:-translate-y-1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.icon{
+				@apply bg-indigo-100 text-indigo-600 h-20 w-20 xl:h-24 xl:w-24 rounded-lg mx-auto flex justify-center items-center mb-4;
+				i{
+					font-size: 64px
+				}
+			}
+			.heading{
+				@apply mt-4;
+				h3{
+					@apply dark:text-gray-300 font-bold text-3xl;
+				}
+			}
+			.content{
+				@apply  dark:text-gray-400 mt-4;
+			}
+		}
+	}
+}
+
+
+/* ********** ********** */
+#cb-book-a-call{
+	@apply bg-gray-100 overflow-hidden dark:bg-deepdark pt-20 relative z-10;
+	.blob-bg {
+		.blob {
+			@apply absolute left-0 pointer-events-none w-32;
+			height: 410px;
+		}
+
+		.blob-1 {
+			top: 12%;
+			opacity: 0.04;
+		}
+
+		.blob-2 {
+			top: 26%;
+			opacity: 0.06;
+		}
+	}
+	.sec-heading{
+		@apply text-center w-full md:w-2/3 mx-auto mb-8;
+		h2{
+			@apply dark:text-gray-300 font-bold text-5xl md:text-5xl mb-4;
+		}
+		p{
+			@apply dark:text-gray-400;
+		}
+	}
+	.main-content{
+		@apply mt-32 flex flex-col md:flex-row items-center;
+		.left{
+			@apply w-full md:w-1/3 px-0 xl:px-16 text-center order-1;
+			h3{
+				@apply font-bold dark:text-gray-300 text-3xl;
+			}
+			a.btn{
+				@apply mt-4 rounded-full;
+				width: fit-content;
+			}
+		}
+		.img{
+			@apply w-full md:w-1/3 order-3 md:order-2;
+			img{
+				@apply object-center object-cover;
+			}
+		}
+		.content{
+			@apply w-full md:w-1/3 ml-16 my-8 md:my-0 order-2 lg:order-3;
+			p.name{
+				@apply mb-4 dark:text-gray-400;
+				span{
+					@apply font-bold;
+				}
+			}
+		}
+	}
+}

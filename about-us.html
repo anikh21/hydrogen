@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="rgb(79, 70, 229)" />
+    <title>Learn, Implementation, Production - Codebumble Inc.</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" id="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./dist/css/libs/fontawesome.css" rel="stylesheet">
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./dist/css/about-us.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <header class="my-4 lg:dark:text-white absolute w-full z-10">
+      <div class="container">
+        <div class="block lg:flex items-center justify-between max-h-12">
+          <div class="brand-wrap">
+            <a href="./index.html" class="">
+              <img src="./dist/assets/images/logo/code-white.svg" alt="codebumble" class="w-36 lg:w-48">
+            </a>
+            <!-- logo -->
+            <div class="lg:hidden">
+              <a href="./case-study.html#cb-talk-to-us"
+                class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">book
+                a call</a>
+              <!-- responsive book a call button -->
+              <button class="hamburger hamburger--slider" type="button" id="menu-icon">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+              <!-- responsive  hamburger icon -->
+            </div>
+          </div>
+          <!-- .brand-wrap -->
+          <nav class="cb-nav max-h-144 overflow-scroll lg:overflow-visible" id="vl-nav">
+            <ul class="block lg:flex" id="menu">
+              <li class="cb-nav-item"><a href="./index.html" class="cb-nav-link">Home</a></li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link">Services
+                  <i class="fad fa-chevron-down arrow"></i>
+                </a>
+                <ul class="cb-mega">
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <i class="far fa-terminal sq-icon"></i>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">Web Development</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">Create Your Own Website with low cost. Choose Your Website Type and Stand Your Own.</p>
+                    </a>
+                  </li>
+  
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <i class="fad fa-play sq-icon"></i>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">Video Editing</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">Create Your Own Animation/2D/3D Promotional Video. Make Your Business More Beautiful.</p>
+  
+                    </a>
+                  </li>
+  
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <i class="fal fa-pencil-paintbrush sq-icon"></i>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">UI/UX Design</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Aliquid commodi quasi ipsum impedit iusto optio?</p>
+                    </a>
+                  </li>
+  
+  
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <i class="fad fa-code sq-icon"></i>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">Software Development</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">Choose Your Own Script Right Now. You can Make an Order for Unlisted Product.</p>
+                    </a>
+                  </li>
+  
+                </ul>
+              </li>
+              <li class="cb-nav-item"><a href="./about-us.html" class="cb-nav-link">About Us</a></li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link">Career
+                  <i class="fad fa-chevron-down arrow"></i>
+                </a>
+  
+                <ul class="cb-mega">
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <i class="fad fa-user-graduate sq-icon"></i>
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get Training</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">Change Your Life and Professional. Be Creative & Make your Self Perfect.</p>
+                    <ul>
+                      <li class="inner-mega-items"><a href="#" class="inner-mega-link">Our
+                          Courses</a></li>
+                      <li class="inner-mega-items"><a href="#" class="inner-mega-link">Student
+                          Verification</a></li>
+                    </ul>
+                  </li>
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <i class="fal fa-laptop-house sq-icon"></i>
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get a Job</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">Show Your Telents and Use Your Time Properly to Shine Yourself.</p>
+                    <ul>
+                      <li class="inner-mega-items"><a href="#" class="inner-mega-link">Find your
+                          preferred Job</a></li>
+                      <li class="inner-mega-items"><a href="#" class="inner-mega-link">Employee
+                          Verification</a></li>
+                    </ul>
+                  </li>
+                </ul>
+  
+              </li>
+              <li class="cb-nav-item"><a href="#" class="cb-nav-link">Blog</a></li>
+            </ul>
+            <!-- navigation items -->
+            <a href="./case-study.html#cb-talk-to-us"
+              class="hidden lg:block bg-indigo-600 text-white hover:bg-white hover:text-indigo-600 rounded-full mx-2 py-2 px-4 text-center uppercase antialiased text-xs transition-all">book
+              a call</a>
+          </nav>
+          <!-- .cb-nav closed -->
+        </div>
+      </div>
+    </header>
+    <!-- Header Closed -->
+
+    <section id="cb-hero-bg">
+		<div class="hero-bg"></div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="heading">
+            <h2>We are dedicated to make your buisness bigger and smoother.</h2>
+          </div>
+          <div class="why-choose-us">
+            <ul>
+              <li>Created 40+ unique sections</li>
+              <li>Very easy customization</li>
+              <li>Super fast loading speed</li>
+              <li>Fully responsive</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section Closed -->
+	<section id="cards">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+			<div class="wrapper">
+				<div class="card">
+					<h1>04</h1>
+					<h4 class="desc">Years in Operation</h4>
+				</div>
+				<div class="card">
+					<h1>13</h1>
+					<h4 class="desc">Completed Web Projects</h4>
+				</div>
+				<div class="card">
+					<h1>3</h1>
+					<h4 class="desc">Completed Hospital Maintenance Software</h4>
+				</div>
+				<div class="card">
+					<h1>1</h1>
+					<h4 class="desc">Completed Billing Software</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Terms & Conditons Closed -->
+
+	<!-- Learn More About Us -->
+	<section id="cb-learn-more-about-us">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+      <div class="wrapper">
+        <div class="sec-heading">
+          <h2>Step up to get closer to the sweet smell of success now.</h2>
+          <h2><br>Join Us and start your journey.</br></h2>
+        </div>
+        <div class="slider">
+          <div class="splide py-8" id="team-slider">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide slide-item">
+                  <div class="icon">
+                    <i class="fad fa-leaf"></i>
+                  </div>
+                  <div class="title">
+                    <h4>Friendly Enviroment</h4>
+                  </div>
+    
+                  <div class="content">
+                    <p>Most of full time employees spend an average of 9 hours a day at the office, and generally speaking most of us spend more time engaging with colleagues and co-workers than engaging with family and friends and if it is not a friendly environment it is going to be HUGE problem.</p>
+                  </div>
+                </div>
+                <div class="splide__slide slide-item">
+                  <div class="icon">
+                    <i class="fal fa-users-crown"></i>
+                  </div>
+                  <div class="title">
+                    <h4>Team Work</h4>
+                  </div>
+    
+                  <div class="content">
+                    <p>We believe teamwork can be a great weapon to utilize work hours efficiently. Teamwork helps in increasing collaboration and has a scope for brainstorming, which results in getting more ideas. Therefore you can see a growth in productivity. To solve complex problems and to complete difficult tasks, the team works better than an individual.</p>
+                  </div>
+                </div>
+                <div class="splide__slide slide-item">
+                  <div class="icon">
+                    <i class="fal fa-seedling"></i>
+                  </div>
+                  <div class="title">
+                    <h4>Career Growth Opportunities</h4>
+                  </div>
+    
+                  <div class="content">
+                    <p>Opportunities in the workplace give employees a sense of getting better at something and always expanding into new areas. It is a universal human need. We become bored, distracted, and disengaged when we feel that our work is routine and repetitive. People crave work experiences that challenge their minds and their skills, and that offers them the chance to rise to the occasion and excel even in high-stress situations.</p>
+                  </div>
+                </div>
+                <div class="splide__slide slide-item">
+                  <div class="icon">
+                    <i class="fal fa-medal"></i>
+                  </div>
+                  <div class="title">
+                    <h4>Competitive Environment</h4>
+                  </div>
+    
+                  <div class="content">
+                    <p>Many people are naturally competitive. Tapping into this instinct can be an easy and effective way to get employees to achieve more than they otherwise would have.
+                      Competition can naturally reduce indifference and laziness. By changing the work atmosphere and attitude, employers can motivate people who would be more naturally inclined to just get by with minimal effort.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__arrows block">
+              <button class="splide__arrow splide__arrow--prev">
+                <i class="fad fa-long-arrow-left"></i>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <i class="fad fa-long-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	</section>
+
+
+  <!-- Contact Us -->
+  <section id="cb-contact-us">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+      <div class="wrapper">
+        <div class="sec-heading">
+          <h2>Take your business to the next level with our team.</h2>
+          <a href="./contact.html" class="btn">Contact Us</a>
+        </div>
+        <div class="contents">
+          <p><b>Our Team is your team. We are a family. Your busines growth is our top priority. </p>
+          <p><b>We have extremely throrough screening method to discover the quality talent, from the establishment, 
+            UXUI design, and development. We are constantly searching for notable troubles which we solve with ardour and drive, 
+            those are the team members your organization will work with for the growth of your company. </b></p>
+        </div>
+      </div>
+		</div>
+	</section>
+
+
+  <!-- Our Members -->
+  <section id="cb-team">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+      <div class="sec-title">
+        <h2>Our Team</h2>        
+      </div>
+      <div class="wrapper">
+        <div class="buttons">
+          <button class="team active" id="founder">Founders</button>
+          <button class="team" id="developer">Developers</button>
+          <button class="team" id="video">Video Editor</button>
+          <button class="team" id="marketing">Marketing</button>
+        </div>
+        <div class="members">
+          <div class="member founder">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/saifur.jpg" alt="founder">
+            </div>
+            <div class="content">
+              <h5>Founder</h5>
+              <h3>Md. Saifur Rahman</h3>
+            </div>
+          </div>
+          <div class="member founder">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/enan.png" alt="CIO">
+            </div>
+            <div class="content">
+              <h5>CIO</h5>
+              <h3>S.M Shahriar Mahmud</h3>
+            </div>
+          </div>
+          <div class="member founder">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/shakil.png" alt="CEO">
+            </div>
+            <div class="content">
+              <h5>CEO</h5>
+              <h3>Shakil Ahmed</h3>
+            </div>
+          </div>
+          <div class="member founder">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/people-2.jpg" alt="chairperson">
+            </div>
+            <div class="content">
+              <h5>Chairperson</h5>
+              <h3>Golam Jakaria</h3>
+            </div>
+          </div>
+          <div class="member developer">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/anik.jpg" alt="front-end developer">
+            </div>
+            <div class="content">
+              <h5>Front-End Developer</h5>
+              <h3>Aritro Anik</h3>
+            </div>
+          </div>
+          <div class="member developer">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/shakil.png" alt="Back-end developer">
+            </div>
+            <div class="content">
+              <h5>Back-End Developer</h5>
+              <h3>Shakil Ahmed</h3>
+            </div>
+          </div>
+          <div class="member developer">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/saifur.jpg" alt="Full-Stack">
+            </div>
+            <div class="content">
+              <h5>Full Stack Developer</h5>
+              <h3>Md. Saifur Rahman</h3>
+            </div>
+          </div>
+          <div class="member marketing">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/yy.jpg" alt="VP of Social Media">
+            </div>
+            <div class="content">
+              <h5>VP of Social Media</h5>
+              <h3>Fazlay Rabbi Shawon</h3>
+            </div>
+          </div>
+          <div class="member video">
+            <div class="member-img">
+              <img src="./dist/assets/images/contents/team-members/sunny.jpg" alt="Video Editor">
+            </div>
+            <div class="content">
+              <h5>Video Editor</h5>
+              <h3>Saimon Hasan Sunny</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	</section>
+
+
+  <!-- Opportunity -->
+  <section id="cb-job-opportunity">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10 relative">
+      <div class="sec-title">
+        <h2>Grab an opportunity work with us!</h2>
+      </div>
+      <div class="wrapper">
+        <ul class="job-oppotunity">
+          <li class="item">
+            <div class="job-title">
+              <a href="./apply-for-job.html#cb-apply-for-job"><h4>Web Development</h4></a>
+            </div>
+            <div class="type">
+              <i class="fad fa-briefcase"></i>
+              <span class="text-content">Full Time</span>
+            </div>
+            <div class="location">
+              <i class="fal fa-map-marked-alt"></i>
+              <span class="text-content">Remote Job</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="job-title">
+              <a href="./apply-for-job.html#cb-apply-for-job"><h4>UI/UX Design</h4></a>
+            </div>
+            <div class="type">
+              <i class="fad fa-briefcase"></i>
+              <span class="text-content">Full Time</span>
+            </div>
+            <div class="location">
+              <i class="fal fa-map-marked-alt"></i>
+              <span class="text-content">Remote Job</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="job-title">
+              <a href="./apply-for-job.html#cb-apply-for-job"><h4>Front-end Developer</h4></a>
+            </div>
+            <div class="type">
+              <i class="fad fa-briefcase"></i>
+              <span class="text-content">Full Time</span>
+            </div>
+            <div class="location">
+              <i class="fal fa-map-marked-alt"></i>
+              <span class="text-content">Remote Job</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="job-title">
+              <a href="./apply-for-job.html#cb-apply-for-job"><h4>Video Editor/Motion Graphics Designer</h4></a>
+            </div>
+            <div class="type">
+              <i class="fad fa-briefcase"></i>
+              <span class="text-content">Full Time</span>
+            </div>
+            <div class="location">
+              <i class="fal fa-map-marked-alt"></i>
+              <span class="text-content">Remote Job</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="job-title">
+              <a href="./apply-for-job.html#cb-apply-for-job"><h4>Marketing</h4></a>
+            </div>
+            <div class="type">
+              <i class="fad fa-briefcase"></i>
+              <span class="text-content">Full Time</span>
+            </div>
+            <div class="location">
+              <i class="fal fa-map-marked-alt"></i>
+              <span class="text-content">Remote Job</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+		</div>
+	</section>
+
+
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="./about-us.html">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="https://facebook.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+					<!-- <li class="media-icon"><a href="#" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li> -->
+					<li class="media-icon"><a href="https://instagram.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+					<li class="media-icon"><a href="https://github.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+					<li class="media-icon"><a href="https://linkedin.com/company/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <!-- Footer Closed -->
+
+    <!-- back to top -->
+    <div class="scroll-progress">
+      <svg
+        class="circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 307.919;
+          "
+        ></path>
+      </svg>
+    </div>
+
+	<!-- splide.JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <!-- app.js -->
+    <script src="dist/js/common.js"></script>
+    <script src="dist/js/about-us.js"></script>
+  </body>
+</html>

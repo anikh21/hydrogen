@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="rgb(79, 70, 229)" />
+    <title>Learn, Implementation, Production - Codebumble Inc.</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" id="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./dist/css/blog-details.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <header class="my-4 lg:dark:text-white absolute w-full z-10">
+      <div class="container">
+        <div class="block lg:flex items-center justify-between max-h-12">
+          <div class="brand-wrap">
+            <a href="./index.html" class="">
+              <img
+                src="./dist/assets/images/logo/code-ind.svg"
+                alt="codebumble"
+                class="w-36 lg:w-48"
+              />
+            </a>
+            <!-- logo -->
+            <div class="lg:hidden">
+              <!-- responsive book a call button -->
+              <button
+                class="hamburger hamburger--slider"
+                type="button"
+                id="menu-icon"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+              <!-- responsive  hamburger icon -->
+            </div>
+          </div>
+          <!-- .brand-wrap -->
+          <nav
+            class="cb-nav max-h-144 overflow-scroll lg:overflow-visible"
+            id="vl-nav"
+          >
+            <ul class="block lg:flex" id="menu">
+              <li class="cb-nav-item">
+                <a href="./index.html" class="cb-nav-link">Features</a>
+              </li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link"
+                  >Solutinos
+                  <span class="material-icons arrow">expand_more</span>
+                </a>
+                <ul class="cb-mega">
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon"> code_off </span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">
+                            Web Development
+                          </h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Create Your Own Website with low cost. Choose Your
+                        Website Type and Stand Your Own.
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon"
+                            >motion_photos_on</span
+                          >
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">Video Editing</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Create Your Own Animation/2D/3D Promotional Video. Make
+                        Your Business More Beautiful.
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon">brush</span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">UI/UX Design</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aliquid commodi quasi ipsum impedit iusto optio?
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon">api</span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">
+                            Software Development
+                          </h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Choose Your Own Script Right Now. You can Make an Order
+                        for Unlisted Product.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cb-nav-item">
+                <a href="#" class="cb-nav-link">Plans</a>
+              </li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link"
+                  >Clients
+                  <span class="material-icons arrow">expand_more</span>
+                </a>
+
+                <ul class="cb-mega">
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <span class="material-icons sq-icon"
+                          >local_library</span
+                        >
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get Training</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">
+                      Change Your Life and Professional. Be Creative & Make your
+                      Self Perfect.
+                    </p>
+                    <ul>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link">Our Courses</a>
+                      </li>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Student Verification</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <span class="material-icons sq-icon">work_outline</span>
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get a Job</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">
+                      Show Your Telents and Use Your Time Properly to Shine
+                      Yourself.
+                    </p>
+                    <ul>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Find your preferred Job</a
+                        >
+                      </li>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Employee Verification</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="cb-nav-item">
+                <a href="contact.html" class="cb-nav-link">Contact Us</a>
+              </li>
+            </ul>
+            <!-- navigation items -->
+          </nav>
+          <!-- .cb-nav closed -->
+          <div class="blog-right">
+            <form class="search-bar">
+              <input type="text" name="search" placeholder="Search" autocomplete="off" required>
+              <label for="search"></label>
+            </form>
+            <a href="#"
+            class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">Schedule a Demo</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Details -->
+    <section id="cb-blog-details">
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper-secondary">
+            <div class="cb-social-share-buttons">
+              <ul>
+                <li class="share-btn">
+                  <span class="material-icons">
+                    share
+                  </span>
+                </li>
+								<li>
+									<a target="_blank" href="https://facebook.com/">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://instagram.com/">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://linkedin.in/">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://twitter.com/">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+									</a>
+								</li>
+							</ul>
+            </div>
+            <div class="main-content">
+              <h2 class="blog-title">10 Ways to Boost Your WooCommerce Product Page Conversions</h2>
+              <div class="blog-meta">
+                <a href="" class="auth">Salman Ravoof</a>
+                <span class="time">November 10, 2021</span>
+              </div>
+              <div class="content">
+                <div class="thumbnail">
+                  <img src="./dist/assets/images/contents/blog.png" alt="">
+                </div>
+                <p class="article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus natus ad explicabo nam id hic laborum, adipisci exercitationem libero. Vel commodi non pariatur laudantium vero cupiditate culpa dolorum est autem architecto suscipit laboriosam, placeat quaerat inventore animi eveniet corrupti amet eum facere fuga veritatis rem quibusdam voluptatem. Ex inventore nemo doloremque tenetur quidem, quod sequi. Quo, harum accusamus quasi fuga voluptatum rerum dignissimos magnam perferendis corporis vel velit voluptatem. Dolorum necessitatibus quis quas doloribus similique soluta nam animi omnis debitis officia magnam laborum corporis, nobis exercitationem ex assumenda, odio reprehenderit? Eum, eligendi repellat fugit nemo minima amet harum temporibus expedita, odio veritatis dignissimos alias officia sit voluptatibus nobis, accusamus possimus in id magni. A soluta voluptate rem, enim esse consectetur. Ab quia libero obcaecati odit illum eius earum voluptatem quo, reprehenderit maxime quae, perferendis iusto veritatis error aperiam voluptatum mollitia. Soluta repellat nihil fuga voluptatibus adipisci quas nobis atque maiores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="try-demo">
+            <div class="demo-wrapper">
+              <div class="demo-img">
+                <img src="./dist/assets/images/contents/snapshot-1.png" alt="">
+              </div>
+              <a href="" class="btn">Try a free demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="cb-list-of-contents">
+          <div class="list-of-contents">
+            <h4 class="heading">List of Contents</h4>
+            <ul>
+              <li><a href="#item-1">The Various Components of an Ecommerce Site</a></li>
+              <li><a href="#item-2">The Benefits of Using Kinsta APM for WooCommerce Sites</a></li>
+              <li><a href="#item-3">How to Fix WooCommerce Performance Issues with Kinsta APM</a></li>
+            </ul>
+          </div>
+          
+          <div class="content-item" id="item-1">
+            <h4 class="heading">The Various Components of an Ecommerce Site</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis vero praesentium explicabo. Enim, consectetur modi praesentium reprehenderit nihil architecto maiores dolorum hic minima ex ipsam illum aspernatur! Corporis, hic ullam laboriosam id vitae fuga officiis pariatur accusantium, totam fugiat dolores doloribus veritatis maiores ipsam aut sapiente natus veniam iste.</p>
+            <img src="./dist/assets/images/contents/blog.png" alt="">
+          </div>
+          <div class="content-item" id="item-2">
+            <h4 class="heading">The Benefits of Using Kinsta APM for WooCommerce Sites</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis vero praesentium explicabo. Enim, consectetur modi praesentium reprehenderit nihil architecto maiores dolorum hic minima ex ipsam illum aspernatur! Corporis, hic ullam laboriosam id vitae fuga officiis pariatur accusantium, totam fugiat dolores doloribus veritatis maiores ipsam aut sapiente natus veniam iste.</p>
+            <img src="./dist/assets/images/contents/blog.png" alt="">
+          </div>
+          <div class="content-item" id="item-3">
+            <h4 class="heading">How to Fix WooCommerce Performance Issues with Kinsta APM</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis vero praesentium explicabo. Enim, consectetur modi praesentium reprehenderit nihil architecto maiores dolorum hic minima ex ipsam illum aspernatur! Corporis, hic ullam laboriosam id vitae fuga officiis pariatur accusantium, totam fugiat dolores doloribus veritatis maiores ipsam aut sapiente natus veniam iste.</p>
+            <img src="./dist/assets/images/contents/blog.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="#">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-facebook"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-twitter"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-instagram"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-github"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <!-- Footer Closed -->
+
+    <!-- back to top -->
+    <div class="scroll-progress">
+      <svg
+        class="circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 307.919;
+          "
+        ></path>
+      </svg>
+    </div>
+
+	<!-- splide.JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <!-- app.js -->
+    <script src="dist/js/common.js"></script>
+    <script src="./dist/js/blog-details.js"></script>
+  </body>
+</html>

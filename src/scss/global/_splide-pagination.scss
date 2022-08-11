@@ -1,0 +1,18 @@
+.splide__pagination{
+
+	button{
+		@apply p-1.5 bg-gray-600 dark:bg-gray-300 rounded-full transform rotate-0 duration-200 transition-transform;
+	}
+
+	li{
+		@apply mr-3;
+	}
+
+	li:last-child{
+		@apply mr-0
+	}
+
+	button.is-active{
+		@apply transform rotate-45 cursor-pointer rounded-sm bg-indigo-600;
+	}
+}

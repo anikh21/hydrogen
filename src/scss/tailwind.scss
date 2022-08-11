@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+	html{
+		scroll-behavior: smooth;
+		scrollbar-width: thin;
+	}
+}
+
+body{
+	@apply text-gray-800;
+}
+
+@media (min-width: 1024px) {
+	/* width */
+::-webkit-scrollbar {
+width: 8px;
+opacity: 0;
+background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 1px ; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #636e72; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #5D5F67; 
+}
+}

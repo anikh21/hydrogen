@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="rgb(79, 70, 229)" />
+    <title>Learn, Implementation, Production - Codebumble Inc.</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" id="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./dist/css/libs/fontawesome.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./dist/css/blog.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <header class="my-4 lg:dark:text-white absolute w-full z-10">
+      <div class="container">
+        <div class="block lg:flex items-center justify-between max-h-12">
+          <div class="brand-wrap">
+            <a href="./index.html" class="">
+              <img
+                src="./dist/assets/images/logo/code-ind.svg"
+                alt="codebumble"
+                class="w-36 lg:w-48"
+              />
+            </a>
+            <!-- logo -->
+            <div class="lg:hidden">
+              <!-- responsive book a call button -->
+              <button
+                class="hamburger hamburger--slider"
+                type="button"
+                id="menu-icon"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+              <!-- responsive  hamburger icon -->
+            </div>
+          </div>
+          <!-- .brand-wrap -->
+          <nav
+            class="cb-nav max-h-144 overflow-scroll lg:overflow-visible"
+            id="vl-nav"
+          >
+            <ul class="block lg:flex" id="menu">
+              <li class="cb-nav-item">
+                <a href="./index.html" class="cb-nav-link">Features</a>
+              </li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link"
+                  >Solutinos
+                  <span class="material-icons arrow">expand_more</span>
+                </a>
+                <ul class="cb-mega">
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon"> code_off </span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">
+                            Web Development
+                          </h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Create Your Own Website with low cost. Choose Your
+                        Website Type and Stand Your Own.
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon"
+                            >motion_photos_on</span
+                          >
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">Video Editing</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Create Your Own Animation/2D/3D Promotional Video. Make
+                        Your Business More Beautiful.
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon">brush</span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">UI/UX Design</h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aliquid commodi quasi ipsum impedit iusto optio?
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="mega-items">
+                    <a href="#" class="mega-link">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <span class="material-icons sq-icon">api</span>
+                        </div>
+                        <div>
+                          <h1 class="text-base text-gray-800">
+                            Software Development
+                          </h1>
+                        </div>
+                      </div>
+                      <p class="my-3">
+                        Choose Your Own Script Right Now. You can Make an Order
+                        for Unlisted Product.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cb-nav-item">
+                <a href="#" class="cb-nav-link">Plans</a>
+              </li>
+              <li class="cb-nav-item has-child">
+                <a class="cb-nav-link"
+                  >Clients
+                  <span class="material-icons arrow">expand_more</span>
+                </a>
+
+                <ul class="cb-mega">
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <span class="material-icons sq-icon"
+                          >local_library</span
+                        >
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get Training</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">
+                      Change Your Life and Professional. Be Creative & Make your
+                      Self Perfect.
+                    </p>
+                    <ul>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link">Our Courses</a>
+                      </li>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Student Verification</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-items p-5">
+                    <div class="flex items-center">
+                      <div class="mr-3">
+                        <span class="material-icons sq-icon">work_outline</span>
+                      </div>
+                      <div>
+                        <h1 class="text-base text-gray-800">Get a Job</h1>
+                      </div>
+                    </div>
+                    <p class="my-3">
+                      Show Your Telents and Use Your Time Properly to Shine
+                      Yourself.
+                    </p>
+                    <ul>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Find your preferred Job</a
+                        >
+                      </li>
+                      <li class="inner-mega-items">
+                        <a href="#" class="inner-mega-link"
+                          >Employee Verification</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="cb-nav-item">
+                <a href="contact.html" class="cb-nav-link">Contact Us</a>
+              </li>
+            </ul>
+            <!-- navigation items -->
+          </nav>
+          <!-- .cb-nav closed -->
+          <div class="blog-right">
+            <form class="search-bar">
+              <input type="text" name="search" placeholder="Search" autocomplete="off" required>
+              <label for="search"></label>
+            </form>
+            <a href="#"
+            class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">Schedule a Demo</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Our Members -->
+    <section id="cb-resources">
+      <div class="blob-bg">
+        <div class="blob blob-1">
+          <img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+        </div>
+        <div class="blob blob-2">
+          <img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+        </div>
+      </div>
+      <div class="container z-10 relative">
+        <div class="sec-title">
+          <h2>Codebumble Blog - WordPress Tutorials and Resources</h2>
+        </div>
+        <div class="resources">
+          <div class="item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="want-to-know">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="titile">Want to know how we increased our traffic over 1000%?</h2>
+          <p>Join 20,000+ others who get our weekly newsletter with insider WordPress tips!</p>
+          <a href="" class="btn">Subscribe Now</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="cb-blog">
+      <div class="blob-bg">
+        <div class="blob blob-1">
+          <img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+        </div>
+        <div class="blob blob-2">
+          <img src="./src/assets/images/blob/blob-1.svg" alt="blob-1">
+        </div>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="">
+              <div class="thumbnail">
+                <img src="./dist/assets/images/contents/blog.png" alt="">
+              </div>
+              <div class="content">
+                <h3 class="title">10 Ways to Boost Your WooCommerce Product Page Conversions</h3>
+                <p>Driving traffic to your WooCommerce store is important, but it's not much use if it doesn't convert. Learn how to turn traffic into sales in our</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="blog-pagination">
+          <ul>
+            <li><a href="" class="arrow"><span class="material-icons">
+              navigate_before
+              </span></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="" class="active">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="" class="arrow"><span class="material-icons">
+              navigate_next
+              </span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="#">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-facebook"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-twitter"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-instagram"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-github"></i></a></li>
+					<li class="media-icon"><a href="#" class="text-xl p-2"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <!-- Footer Closed -->
+
+    <!-- back to top -->
+    <div class="scroll-progress">
+      <svg
+        class="circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 307.919;
+          "
+        ></path>
+      </svg>
+    </div>
+
+	<!-- splide.JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <!-- app.js -->
+    <script src="dist/js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.brand-wrap {
+	@apply w-full lg:w-auto flex justify-between items-center;
+}
+
+.cb-nav {
+	@apply lg:flex antialiased text-sm items-center font-bold bg-white lg:bg-transparent mt-5 lg:mt-0 transform translate-y-20 lg:translate-y-0 opacity-0 lg:opacity-100 invisible lg:visible;
+	transition: transform .125s ease-in-out, opacity .125s ease-in, visibility .125s ease-out;
+}
+
+.cb-nav.active {
+	@apply transform translate-y-0 lg:translate-y-0 opacity-100 visible;
+
+}
+
+.sq-icon {
+	@apply bg-blue-200 rounded-md p-2.5 text-indigo-600 w-8 h-8 justify-center items-center;
+	display: flex !important;
+	font-size: 20px;
+}
+
+
+#vl-nav {
+	>ul {
+		.cb-nav-item {
+			@apply lg:mx-3 lg:text-white lg:dark:hover:text-gray-300 transition block lg:inline-block w-full lg:w-auto relative lg:static;
+
+			.cb-nav-link {
+				@apply p-4 lg:p-0 lg:py-4 block lg:inline-block hover:bg-indigo-600 lg:hover:bg-transparent hover:text-white cursor-pointer;
+
+				.arrow {
+					@apply ml-1 relative top-0.5;
+					font-size: 14px;
+					transition: transform .25s ease-in-out;
+				}
+
+				&::before {
+					content: '';
+					@apply block w-0 h-0.5 bg-gray-300 relative top-6 opacity-100;
+					transition: width .25s ease-in-out;
+				}
+			}
+
+			&:hover .cb-nav-link .arrow {
+				@apply transform rotate-180;
+			}
+
+			&:hover .cb-nav-link::before {
+				@apply w-6 lg:w-4/6 opacity-100;
+			}
+
+			>.cb-mega {
+				@apply bg-gray-50 lg:absolute w-auto max-w-full lg:max-w-2xl hidden lg:grid invisible lg:left-auto lg:right-0 p-0 z-50 transform translate-x-0 translate-y-20 lg:translate-x-26 lg:translate-y-20 border-l-4 lg:border-l-0 border-indigo-600 rounded lg:rounded-none;
+				grid-template-columns: repeat(auto-fit, calc(42rem/2));
+				transition: transform .300s ease-in-out, opacity .300s ease-in, visibility .300s ease-out;
+
+
+
+				.mega-items {
+					@apply hover:bg-indigo-600 hover:text-white text-gray-400;
+
+					.mega-link {
+						@apply p-5 block;
+					}
+
+					&:hover h1 {
+						@apply text-white;
+					}
+
+					&:hover .sq-icon {
+						@apply text-white bg-blue-500;
+					}
+
+					.inner-mega-items {
+						@apply py-1 flex flex-row items-center;
+
+						&::before {
+							content: '\f054';
+							font-family: 'Font Awesome 5 Pro';
+							margin-right: .5rem;
+							font-size: 16px;
+						}
+
+						.inner-mega-link {
+							@apply hover:text-gray-300 transition;
+						}
+					}
+				}
+			}
+		}
+
+        
+		.has-child .cb-mega[aria-hidden='false'] {
+			@apply block lg:grid visible opacity-100 z-50 transform translate-x-0 translate-y-0 lg:translate-x-26 lg:translate-y-4;
+		}
+	}
+}

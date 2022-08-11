@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen dark:bg-deepdark font-nunito">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="theme-color" content="rgb(79, 70, 229)">
+	<title>Learn, Implementation, Production - Codebumble Inc.</title>
+	<link rel="shortcut icon" href="" type="image/x-icon" id="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="./dist/css/libs/fontawesome.css" rel="stylesheet">
+	<!-- tailwind -->
+	<link rel="stylesheet" href="./dist/css/tailwind.css">
+	<!-- style -->
+	<link rel="stylesheet" href="./dist/css/courses.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+	<header class="my-4 lg:dark:text-white absolute w-full z-10">
+		<div class="container">
+			<div class="block lg:flex items-center justify-between max-h-12">
+				<div class="brand-wrap">
+					<a href="./index.html" class="">
+						<img src="./dist/assets/images/logo/code-ind.svg" alt="codebumble" class="w-36 lg:w-48">
+					</a>
+					<!-- logo -->
+					<div class="lg:hidden">
+						<a href="./case-study.html#cb-talk-to-us"
+							class="bg-indigo-600 hover:bg-white hover:text-indigo-600 rounded-full mr-2 lg:mr-4 py-2 px-3 text-center uppercase antialiased text-xs transition-all font-bold text-white">book
+							a call</a>
+						<!-- responsive book a call button -->
+						<button class="hamburger hamburger--slider" type="button" id="menu-icon">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<!-- responsive  hamburger icon -->
+					</div>
+				</div>
+				<!-- .brand-wrap -->
+				<nav class="cb-nav max-h-144 overflow-scroll lg:overflow-visible" id="vl-nav">
+					<ul class="block lg:flex" id="menu">
+						<li class="cb-nav-item"><a href="./index.html" class="cb-nav-link">Home</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Services
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+							<ul class="cb-mega">
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="far fa-terminal sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Web Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Website with low cost. Choose Your Website Type and Stand Your Own.</p>
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-play sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Video Editing</h1>
+											</div>
+										</div>
+										<p class="my-3">Create Your Own Animation/2D/3D Promotional Video. Make Your Business More Beautiful.</p>
+
+									</a>
+								</li>
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fal fa-pencil-paintbrush sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">UI/UX Design</h1>
+											</div>
+										</div>
+										<p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Aliquid commodi quasi ipsum impedit iusto optio?</p>
+									</a>
+								</li>
+
+
+								<li class="mega-items">
+									<a href="#" class="mega-link">
+										<div class="flex items-center">
+											<div class="mr-3">
+												<i class="fad fa-code sq-icon"></i>
+											</div>
+											<div>
+												<h1 class="text-base text-gray-800">Software Development</h1>
+											</div>
+										</div>
+										<p class="my-3">Choose Your Own Script Right Now. You can Make an Order for Unlisted Product.</p>
+									</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="cb-nav-item"><a href="./about-us.html" class="cb-nav-link">About Us</a></li>
+						<li class="cb-nav-item has-child">
+							<a class="cb-nav-link">Career
+								<i class="fad fa-chevron-down arrow"></i>
+							</a>
+
+							<ul class="cb-mega">
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fad fa-user-graduate sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get Training</h1>
+										</div>
+									</div>
+									<p class="my-3">Change Your Life and Professional. Be Creative & Make your Self Perfect.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Our
+												Courses</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Student
+												Verification</a></li>
+									</ul>
+								</li>
+								<li class="mega-items p-5">
+									<div class="flex items-center">
+										<div class="mr-3">
+											<i class="fal fa-laptop-house sq-icon"></i>
+										</div>
+										<div>
+											<h1 class="text-base text-gray-800">Get a Job</h1>
+										</div>
+									</div>
+									<p class="my-3">Show Your Telents and Use Your Time Properly to Shine Yourself.</p>
+									<ul>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Find your
+												preferred Job</a></li>
+										<li class="inner-mega-items"><a href="#" class="inner-mega-link">Employee
+												Verification</a></li>
+									</ul>
+								</li>
+							</ul>
+
+						</li>
+						<li class="cb-nav-item"><a href="#" class="cb-nav-link">Blog</a></li>
+					</ul>
+					<!-- navigation items -->
+					<a href="./case-study.html#cb-talk-to-us"
+						class="hidden lg:block bg-indigo-600 text-white hover:bg-white hover:text-indigo-600 rounded-full mx-2 py-2 px-4 text-center uppercase antialiased text-xs transition-all">book
+						a call</a>
+				</nav>
+				<!-- .cb-nav closed -->
+			</div>
+		</div>
+	</header>
+	<!-- Header Closed -->
+
+	<!-- Header Bottom -->
+	<section id="cb-header-bottom">
+		<div class="container z-10 relative lg:flex items-center min-h-25">
+			<div class="left">
+				<h3>The best way to learn.</h3>
+				<p>Enroll in any course and get access to all training videos and necessary documents.</p>
+			</div>
+			<div class="right">
+				<div class="search-courses">
+					<h3>Search for courses</h3>
+					<form>
+						<div class="input-group">
+							<div class="input-item">
+								<input type="text" name="search" autocomplete="off" required>
+								<label class="label-name" for="search">
+									<span class="content">Search</span>
+								</label>
+							</div>
+						</div>
+						<button class="btn" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+
+	<!-- Course Info -->
+	<section id="cb-course-info" class="overflow-hidden bg-white dark:bg-deepdark relative pb-20">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./dist/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./dist/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10">
+			<div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 py-8">
+				<div class="card">
+					<div class="w-16">
+						<img src="./src/assets/images/contents/explain.svg" alt="development">
+					</div>
+					<div class="content">
+						<h2>Explanation</h2>
+						<p>We explain it as simply as we can so that you can easily understand.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="w-16">
+						<img src="./src/assets/images/contents/certificate.svg" alt="development">
+					</div>
+					<div class="content">
+						<h2>Certifications </h2>
+						<p>After completing the course with a great test score, you will get a certificate. </p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="w-16">
+						<img src="./src/assets/images/contents/example.svg" alt="development">
+					</div>
+					<div class="content">
+						<h2>Conveying Example</h2>
+						<p>We loved to share real-life-based examples during solving problems so that you'll get accurate information about the issue.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="w-16">
+						<img src="./src/assets/images/contents/learner-community.svg" alt="development">
+					</div>
+					<div class="content">
+						<h2>Friendly Community</h2>
+						<p>We have a robust and friendly community. So you can share your problems there to work out by discussing with your mates. It will make your learning process more manageable.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+
+	<!-- Our Courses -->
+	<section id="cb-our-courses" class="overflow-hidden bg-white dark:bg-deepdark relative pb-20">
+		<div class="blob-bg">
+			<div class="blob blob-1">
+				<img src="./dist/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+			<div class="blob blob-2">
+				<img src="./dist/assets/images/blob/blob-1.svg" alt="blob-1">
+			</div>
+		</div>
+		<div class="container z-10">
+			<div class="our-course">
+				<div class="search">
+					<form>
+						<div class="input-group">
+							<div class="input-item">
+								<input type="text" name="search2" autocomplete="off" required>
+								<label class="label-name" for="search2">
+									<span class="content">Search</span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<div class="buttons">
+						<select name="sort" id="sort">
+							<option value="">Popularity</option>
+							<option value="">New</option>
+							<option value="">Old</option>
+						</select>
+					</div>
+				</div>
+				<div class="course-tab">
+					<div class="contents">
+						<div class="content active" id="categories">
+							<div class="filter-container">
+								<div class="category-head">
+									<ul>
+										<li class="category-name active" id="all">
+											<div>All</div>
+										</li>
+										<li class="category-name" id="js-ramework">
+											<div>JS Framework</div>
+										</li>
+										<li class="category-name" id="php-framework">
+											<div>PHP Framework</div>
+										</li>
+										<li class="category-name" id="vanilla-javaScript">
+											<div>Vanilla JavaScript</div>
+										</li>
+										<li class="category-name" id="python">
+											<div>Python</div>
+										</li>
+										<li class="category-name" id="WordPress">
+											<div>WordPress</div>
+										</li>
+										<li class="category-name" id="wp-theme-development">
+											<div>WP Theme Development</div>
+										</li>
+										<li class="category-name" id="wp-plugin-development">
+											<div>WP Plugin Development</div>
+										</li>
+									</ul>
+								</div>
+								<div class="courses">
+									<h2 class="dark:text-gray-200 text-gray-800 text-center text-3xl">No Courses have been published yet!!!
+									</h2>
+									<p class="dark:text-gray-200 text-gray-800 text-center text-xl mt-3">Please check back later. We're working on it.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Closed -->
+
+	<!-- Footer -->
+	<footer id="footer" class="bg-darkwhite dark:bg-deepdark dark:text-gray-300 text-gray-800 border-t-2 border-gray-700">
+		<div class="container pt-10">
+			<div class="flex flex-col justify-center items-center border-b-2 border-gray-700">
+				<img src="./src/assets/images/logo/code-ind.svg" alt="codebumble" class="w-44 lg:w-48">
+				<ul class="my-10 flex flex-col lg:flex-row text-center">
+					<li class="footer-menu-item"><a href="./terms-of-service.html">Terms of Service</a></li>
+					<li class="footer-menu-item"><a href="./privacy-policy.html">Privacy Policy</a></li>
+					<li class="footer-menu-item"><a href="#">Sitemap</a></li>
+					<li class="footer-menu-item"><a href="./about-us.html">About</a></li>
+				</ul>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between items-center pt-4">
+				<span>&copy; 2021 Codebumble Inc. All right reserved.</span>
+				<ul class="flex mt-3 lg:mt-0">
+					<li class="media-icon"><a href="https://facebook.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+					<!-- <li class="media-icon"><a href="#" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li> -->
+					<li class="media-icon"><a href="https://instagram.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+					<li class="media-icon"><a href="https://github.com/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+					<li class="media-icon"><a href="https://linkedin.com/company/codebumble" target="_blank" class="text-xl p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Closed -->
+
+	<!-- back to top -->
+	<div class="scroll-progress">
+		<svg class="circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		   <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+		</svg>
+	</div>
+
+	<!-- app.js -->
+	<!-- splide.JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+	<script src="dist/js/common.js"></script>
+	<script src="dist/js/courses.js"></script>
+
+
+</body>
+</html>
