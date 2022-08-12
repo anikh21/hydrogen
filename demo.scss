@@ -50,12 +50,38 @@
 
 			>.cb-mega {
 				@apply bg-gray-50 lg:absolute w-auto max-w-full lg:block z-50 border-l-4 lg:border-l-0 border-indigo-600 rounded lg:rounded-none hidden invisible relative;
+				// @apply bg-gray-50 lg:absolute w-auto max-w-full lg:max-w-2xl hidden lg:grid invisible lg:left-auto lg:right-0 p-0 z-50 transform translate-x-0 translate-y-20 lg:-translate-x-36 lg:translate-y-20 border-l-4 lg:border-l-0 border-indigo-600 rounded lg:rounded-none;
+				// grid-template-columns: repeat(auto-fit, calc(42rem/2));
+				// transition: transform .300s ease-in-out, opacity .300s ease-in, visibility .300s ease-out;
 
 
 
 				.mega-items {
 					@apply hover:bg-indigo-600 hover:text-white text-gray-400 py-4 px-6;
 
+					&.has-inner{
+						@apply relative;
+						&.active{
+							@apply absolute top-0 left-0 w-full;
+						}
+						.items-inner{
+							@apply absolute bg-slate-400 lg:w-max;
+						}
+					}
+					ul.items-inner{
+						@apply bg-gray-100 absolute top-14 lg:top-0 left-14 lg:left-24 hidden; //hidden
+						li{
+							@apply bg-gray-100 hover:bg-indigo-600 hover:text-white text-gray-400;
+							a{
+								@apply block py-4 px-6;
+							}
+						}
+					}
+					&:hover{
+						ul.items-inner{
+							@apply block;
+						}
+					}
 					.mega-link {
 						@apply py-4 px-6 block;
 					}
@@ -82,39 +108,40 @@
 							@apply hover:text-gray-300 transition;
 						}
 					}
-					&.has-inner{
-						@apply relative;
-						.items-inner{
-							@apply bg-slate-400 absolute top-14 lg:top-0 left-6 lg:left-24 w-full lg:w-max hidden z-50;
-							li{
-								@apply bg-gray-100 hover:bg-indigo-600 hover:text-white text-gray-400 py-4 px-6;
-								pointer-events: none;
-							}
-						}
-						&.active{
-							@apply absolute top-0 left-0 w-full;
-							.items-inner{
-								@apply block;
-							}
-						}
-					}
-					&:hover{
-						.items-inner{
-							@apply lg:block;
-						}
-					}
 				}
 			}
 		}
 
         
 		.has-child .cb-mega[aria-hidden='false'] {
-			@apply block lg:grid visible opacity-100 z-50 transform translate-x-0 translate-y-0 lg:-translate-x-36 lg:translate-y-4;
+			@apply block lg:grid visible opacity-100 z-50;
 		}
 		.has-child:hover{
 			.cb-mega{
-				@apply lg:block lg:visible lg:opacity-100 lg:z-50;
+				@apply lg:block lg:visible lg:opacity-100 z-50;
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.items-inner{
+		@apply w-0 h-0;
+	}
+	.has-inner.active{
+		@apply absolute;
+		// &:hover{
+			.items-inner {
+				@apply -right-14;
+				height: fit-content;
+				width: 100vw;
+				background-color: yellow !important;
+				// left: 0;
+				// right: auto;
+				z-index: 1000;
+				border-left: 4px solid green;
+				visibility: visible;
+			}
+		// }
 	}
 }
