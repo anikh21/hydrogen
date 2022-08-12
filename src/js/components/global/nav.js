@@ -9,9 +9,12 @@ var getCbNav = $('#vl-nav');
 getIcon.addEventListener('click', () => {
     getIcon.classList.toggle('is-active');
     getCbNav.classList.toggle('active');
+    if (getCbNav.classList.contains('active'))
+        document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = 'scroll';
 });
 
-const x = window.matchMedia('(max-width: 768px)');
+const x = window.matchMedia('(max-width: 1023px)');
 // Detect Screen
 function detectScreen(x) {
     return x.matches ? 'mobile' : 'desktop';
@@ -162,10 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-(() => {
-    document.querySelectorAll('.has-inner').forEach((child) => {
-        child.addEventListener('click', () => {
-            child.classList.toggle('active');
-        });
+document.querySelectorAll('.has-inner').forEach((child) => {
+    child.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('mega-items')) return;
+        if (detectScreen(x) === 'desktop') return;
+        child.classList.toggle('active');
     });
-})();
+});
